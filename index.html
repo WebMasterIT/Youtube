@@ -9,37 +9,108 @@
 <body>
 	
 	<header class="header">
-		<div class="menu-button">
-			<a href="#"><img src="img/hamburger.png" alt=""></a>
-		</div>
-		<div class="logo-button">
+		<button class="menu-button">
+			<img src="img/hamburger.png" alt="">
+		</button>
+		<button class="logo-button">
 			<a href="https://www.youtube.com/"> <img src="img/logoword.png"></a>
-			<span><sup><small>RU</small></sup></span>
-		</div>
+			<div><span>RU</span></div>
+		</button>
 		 
 		
 		<div class="search-button">
 			<input type="text" id='filter-input' placeholder="Введите запрос" class="search">
-			<a href="#"><img src="img/tia.png" class="keyboard"></a>
-			<a href="#"> <img src="img/search2.png" class="search-icon">
+			<img src="img/tia.png" class="keyboard">
+			<img src="img/search2.png" class="search-icon">
 		</div>
-
-		<div class="right-side-buttons">
-			<div class="create-button">
+		
+		<container class="right-side-buttons">
+			<button class="create-button">
 			<a href="#"><img src="img/camera3.png" alt=""></a>
-			</div>
-			<div class="application-button">
+			</button>
+			<button class="application-button">
 				<a href="#"><img src="img/application.png" alt=""></a>
-			</div>
-			<div class="settings-button">
+			</button>
+			<button class="settings-button">
 				<a href="#"><img src="img/settings.png" alt=""></a>
-			</div>
-			<div class="user-button">
-				<a href="#"><img src="img/User3.png" alt=""></a>
-			</div>
-		</div>
+			</button>
+			<button class="user-button">
+				<img src="img/User.svg" alt=""> 
+				<span class="user-button-enter">ВОЙТИ</span>	 
+			</button>
+		</container>
 	</header>
 		
+	<container class="wrapper">
+		<nav>
+			<div class="dropdown">
+				<div class="dropdown-menu">
+					<ul class="submenu">
+						<li class="home"><img src="img/home-24px.svg" class="home-icon" alt=""><span class="home-text"><a href="#">Главная</a></span></li>
+						<li class="trend"><img src="img/fire.png" class="trend-icon" alt=""><span class="trend-text"><a href="#">В тренде</a></span></li>
+						<li class="subscribe"><img src="img/subscriptions.svg"  class="subscribe-icon" alt=""><span class="subscribe-text"><a href="#">Подписки</a></span></li>
+						
+						<li class="library"><img src="img/library.svg" class="library-icon" alt=""><span class="library-text"><a href="#">Библиотека</a></span></li>
+						<li class="history"><img src="img/history-24px.svg" class="history-icon" alt=""><span class="history-text"><a href="#">История</a></span></li>
+						<li class="your-video"><img src="img/play_arrow.svg" class="your-video-icon" alt=""><span class="your-video-text"><a href="#">Ваши видео</a></span></li>
+						<li class="later"><img src="img/later.png" class="later-icon" alt=""><span class="later-text"><a href="#"><a href="#">Смотреть позже</a></span></li>
+						<li class="liked"><img src="img/thumb_up.svg" class="liked-icon" alt=""><span class="liked-text"><a href="#">Понравившиеся</a></span></li>
+
+						<li class="login-in-menu">
+						Вы сможете ставить
+						<br>отметки "Нравится",
+						<br>писать комментарии и
+						<br>подписываться на
+						<br>каналы.<br>
+						<button class="user-button-in-menu">
+							<img src="img/User.svg" alt=""> 
+							<span class="user-button-enter">ВОЙТИ</span>	 
+						</button>
+						</li>
+						
+						<li class="the-best">ЛУЧШЕЕ НА YOUTUBE</li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Музыка</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Спорт</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Видеоигры</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Кинозал</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Новости</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Прямые трансляции</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">В центре внимания</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Панорамные видео</a></span></li>
+
+						
+						<li class="catalog"><img src="img/music.svg" class="catalog-icon" alt=""><span class="catalog-text"><a href="#">Каталог каналов</a></span></li>
+						<li class="the-best">ДРУГИЕ ВОЗМОЖНОСТИ</li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">YouTube Premium</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Трансляции</a></span></li>
+	
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Настройка</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Жалобы</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Справка</a></span></li>
+						<li class="music"><img src="img/music.svg" class="music-icon" alt=""><span class="music-text"><a href="#">Отправить отзыв</a></span></li>
+						
+						<li class="login-in-menu">	
+						<br>О сервисе  Прессе
+						<br>Правообладателям
+						<br>Связаться с нами  Авторам
+						<br>Рекламодателям
+						<br>Разработчикам
+						
+						<br>
+						<br>Условия использования
+						<br>Конфиденциальность
+						<br>Правила и безопасность
+						<br>Новые функции.
+						
+						<br>
+						<br>© 2020 Google LLC
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</container>
+
 	
 	<script src="script/script.js"></script>
 </body>

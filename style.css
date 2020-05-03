@@ -1,104 +1,125 @@
 
+* {
+	box-sizing: border-box;
+}
 
 body {
 	background-color: #E4DCDC;
-	 margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+
+a {
+	color: black;
+	text-decoration: none;
 }
 
 .header {
- 
 	background-color: #FFFFFF;
 	display: flex;
 	height: 54px;
+	justify-content: space-between;
+}
+
+.menu-button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
 }
 
 .menu-button img {
 	opacity: .5;
-	width: 21px;
-	height: 20px;
-	margin-left: 25px;
-	margin-top: 17px;
+	width: 22px;
+	height: 22px;
+	margin-left: 20px;
+	margin-top: 6px;
 }
 
 .logo-button {
-	margin-top: -6px;
-	height: 24px
+	display: flex;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	margin-right: 1500px;
 }
 
 
 .logo-button img {
 	margin-top: -3px;
- 	margin-left: 24px;
- 	height: 72px;
+ 	height: 64px;
  	width: 82px;
-	 
 }
 
 .logo-button span {
-	position: absolute;
-	left: 7.5%;
-	top: 1.5%;
-	font-size: 14px;
+	position: relative;
+	font-size: 9px;
+	right: 8px;
+	top: 8px;
+
 }
 
 
 .search-button {
+	margin-left: -94%;
 	display: flex;
-	margin-left: auto;
-
-	
 }
 
 .search-button .search {
-	border: 1px solid 0.6;
+	position: relative;
 	padding: 6px;
 	outline: none;
-	height: 14px;
+	height: 28px;
 	margin-top: 14px;
-	width: 560px;
-	margin-left: -160px;
-	font-size: 16px;
-	box-shadow: none;
-	font-family:  'Noto',sans-serif;
+	width: 580px;
+	font-size: 16px; 
 }
 
 .search-button .search:focus {
-	
 	border: 1px solid #0005C3;
-
 }
 
 .search-icon {
+	cursor: pointer;
 	width: 64px;
-	height: 30px;
-	margin-top: 12px;
+	height: 28px;
+	margin-top: 14px;
 }
 
+
 .keyboard {
+	cursor: pointer;
 	position: absolute;
-  	padding: 10px;
-	margin-top: 13px;
-	margin-left: -40px;
+	top: 23px;
+ 	right: 755px;
+	height: 11px;
 	width: 20px;
-	height: 12px;
 }
 
 
 
 .right-side-buttons {
 	display: flex;
-	margin-left: auto;
+
 }
 
 .create-button {
-	margin-left: -200px;
-	
+	width: 48px;
+	height: 48px;
+	background-color: transparent;
+	border: none;
 }
 
 .create-button img {
 	margin-top: 16px;
 	width: 20px;
 	height: 24px;
+}
+
+.application-button{ 
+	margin-bottom: 6px;
+	background-color: transparent;
+	border: none;
 }
 
 .application-button img {
@@ -109,20 +130,294 @@ body {
 	height: 18px;
 }
 
+.settings-button {
+	background-color: transparent;
+	border: none;
+}
+
 .settings-button img {
 	margin-top: 15px;
 	margin-left: 20px;
 	width: 36px;
 	height: 24px;
-	
+}
+
+.user-button {
+	background-color: transparent;
+	border: 1px solid #065FD4;
+	margin-top: 10px;
+	margin-right: 18px;
+	width: 102px;
+	height: 40px;
+}
+
+.user-button img {
+	width: 28px;
+	height: 28px;
+}
+
+.user-button-enter {
+	position: relative;
+ 	top: -8px;
+	font-weight: 700;
+	color: #065FD4;
+
+}
+
+.dropdown {
+	margin-top: -15px;
+	height: 100%;
+}
+
+.submenu {
+	  list-style-type: none;
+	  width: 14%;
+	  background-color: #fff;
+	  margin-left: -40px;
+
+}
+
+.home {
+	cursor: pointer;
+	display: flex;
+	padding: 20px 0 0 0;
+}
+
+.home:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.home-icon {
+	padding: 0px 15px 10px;
+	margin-left: 10px;
+}
+
+.home-text {
+	margin-top: 5px;
+	margin-left: 10px;
+	font-size: 14px;
 }
 
 
-.user-button img {
-	margin-top: -5px;
-	margin-right: 20px;
-	padding: 14px;
-	width: 101px;
-	height: 40px;
+.trend {
+	cursor: pointer;
+	display: flex;
+	padding: 15px 0 10px 0;
+ 
+}
 
+.trend:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.trend-icon {
+	padding: 0 15px 0;
+	margin-left: 13px;
+	height: 24px;
+	margin-top: -10px;
+}
+
+.trend-text {
+	margin-top: -5px;
+	margin-left: 12px;
+}
+
+.subscribe {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 5px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.subscribe-icon {
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.subscribe:hover {
+
+	background: rgba(0,0,0,0.1);
+}
+
+.subscribe-text {
+	margin-left: 5px;
+}
+
+.library {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 5px 0px;
+}
+
+.library:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.library-icon {
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.library-text {
+	margin-left: 5px;
+}
+
+.history {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 5px 0px;
+}
+
+.history:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.history-icon {
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.history-text {
+	margin-left: 5px;
+}
+
+.your-video {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 5px 0px;
+}
+
+.your-video:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.your-video-icon {
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.your-video-text {
+	margin-left: 5px;
+}
+
+
+.later {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 5px 0px;
+}
+
+.later:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.later-icon{
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.later-text {
+	margin-left: 5px;
+}
+
+
+.liked {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 5px 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.liked:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.liked-icon{
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.liked-text {
+	margin-left: 5px;
+}
+
+
+
+
+.login-in-menu {
+	padding: 16px 32px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+
+.user-button-in-menu {
+	background-color: transparent;
+	border: 1px solid #065FD4;
+	margin-top: 10px;
+	width: 102px;
+	height: 40px;
+}
+
+.user-button-in-menu img {
+	width: 28px;
+	height: 28px;
+}
+
+
+.the-best {
+	padding: 8px 24px;
+}
+
+
+.music {
+	cursor: pointer;
+	display: flex;
+	padding: 10px 0 10px 0px;
+}
+
+.music:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.music-icon{
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+
+.music-text {
+	margin-top: 2px;
+	margin-left: 5px;
+}
+
+
+.catalog {
+ 	cursor: pointer;
+ 	display: flex;
+	padding: 10px 0 10px 0px;
+	border-top: 1px solid rgba(0,0,0,0.2);
+ 	border-bottom: 1px solid rgba(0,0,0,0.2);
+ }
+
+.catalog:hover {
+	background: rgba(0,0,0,0.1);
+}
+
+.catalog-icon{
+	padding: 0 15px 0;
+	margin-left: 10px;
+	height: 24px;
+}
+
+.catalog-text {
+	margin-top: 2px;
+	margin-left: 5px;
 }
