@@ -1,0 +1,37 @@
+
+.search-place {
+	display: flex;
+}
+
+.search-place .search {
+	height: 28px;
+	width: 575px;
+	padding: 6px;
+	outline: none;
+	margin-top: 14px;
+	margin-left: 65px;
+	font-size: 16px; 
+}
+
+.search-place .search:focus {
+	border: 1px solid #0005C3;
+}
+
+.search-icon {
+	width: 64px;
+	height: 28px;
+	margin-top: 14px;
+	border: 1px solid #C0C0C0;
+}
+
+.search-button {
+	 position: relative;
+}
+
+.keyboard {
+	height: 11px;
+	width: 19px;
+	position: absolute;
+	top: 23px;
+ 	right: 12px;
+}

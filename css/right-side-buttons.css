@@ -1,0 +1,54 @@
+
+.right-side-buttons {
+	display: flex;
+}
+
+.right-buttons-style {
+	background-color: transparent;
+	border: none;
+}
+
+.create-button {
+	width: 48px;
+	height: 48px;
+}
+
+.create-button img {
+	margin-top: 10px;
+}
+
+.application-button{ 
+	margin-bottom: 6px;
+}
+
+.application-button img {
+	margin-top: 10px;
+	margin-left: 6px;
+}
+
+.settings-button img {
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.user-button {
+	width: 102px;
+	height: 40px;
+	margin-top: 8px;
+	margin-right: 18px;
+	background-color: transparent;
+	border: 1px solid #065FD4;
+}
+
+.user-button img {
+	width: 28px;
+	height: 28px;
+}
+
+.user-button-enter {
+	position: relative;
+ 	top: -8px;
+	font-weight: 700;
+	color: #065FD4;
+}

@@ -1,273 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Youtube</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Youtube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/left-side-buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link rel="stylesheet" type="text/css" href="css/right-side-buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/closed-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/open-menu.css">
+    <link rel="stylesheet" href="css/wrapper.css">
+ 
+
 </head>
 <body>
-	
-	<header class="header">
-		<div class="left-side-buttons">
-		<button class="menu-button" id="menu-button">
-			<img src="img/hamburger.png" alt="">
-		</button>
-		<button class="logo-button">
-			<a href="https://www.youtube.com/"> <img src="img/logoword.png"></a>
-			<div><span>RU</span> </div>
-		</button>
-		</div>
-		
-		<div class="search-place">
-			<div class="search-button">
-			<input type="text" id='filter-input' placeholder="Введите запрос" class="search">
-			<img src="img/tia.png" class="keyboard">
-			</div>
-			<img src="img/search2.png" class="search-icon">
-		</div>
-		
-		<div class="right-side-buttons">
-			<button class="create-button">
-			<a href="#"><img src="img/create.svg" alt=""></a>
-			</button>
-			<button class="application-button">
-				<a href="#"><img src="img/application.svg" alt=""></a>
-			</button>
-			<button class="settings-button">
-				<a href="#"><img src="img/settings.svg" alt=""></a>
-			</button>
-			<button class="user-button">
-				<img src="img/User.svg" alt=""> 
-				<span class="user-button-enter">ВОЙТИ</span>	 
-			</button>
-		</div>
-	</header>
-	
-	
-		<nav>
-			<div class="dropdown">
-				<div class="dropdown-menu">
-					<ul id="closed-menu">
-						<li class="divider-nc"></li>
-						<li class="home-closed" id="home-closed">
-							<img src="img/home-24px.svg" class="home-closed-icon" alt="">
-							<span class="home-closed-text">
-								<a href="#">Главная</a>
-							</span>
-						</li>
-						<li class="trend-closed">
-							<img src="img/fire.png" class="trend-closed-icon" alt="">
-							<span class="trend-closed-text">
-								<a href="#">В тренде</a>
-							</span>
-						</li>
-						<li class="subscribe-closed">
-							<img src="img/subscriptions.svg"  class="subscribe-closed-icon" alt="">
-							<span class="subscribe-closed-text">
-								<a href="#">Подписки</a>
-							</span>
-						</li>
-						<li class="library-closed">
-							<img src="img/library.svg" class="library-closed-icon" alt="">
-							<span class="library-closed-text">
-								<a href="#">Библиотека</a>
-							</span>
-						</li>
-					</ul>	
-					<ul class="submenu" id="submenu">
-						
-						<li class="divider-nc"></li>
-						<li class="home">
-							<img src="img/home-24px.svg" class="home-icon" alt="">
-							<span class="home-text">
-								<a href="#">Главная</a></span>
-						</li>
-						<li class="trend">
-							<img src="img/fire.png" class="trend-icon" alt="">
-							<span class="trend-text">
-								<a href="#">В тренде</a>
-							</span>
-						</li>
-						<li class="subscribe">
-							<img src="img/subscriptions.svg"  class="subscribe-icon" alt="">
-							<span class="subscribe-text">
-								<a href="#">Подписки</a></span>
-						</li>
+    
+    <header class="header">
+        <div class="left-side-buttons">
+        <button id="menu-button" class="pointer" >
+            <img src="img/hamburger.png" alt="">
+        </button>
+        <button class="logo-button pointer">
+            <a href="https://www.youtube.com/"> <img src="img/logoword.png"></a>
+            <div><span>RU</span> </div>
+        </button>
+        </div>
+        
+        <div class="search-place">
+            <div class="search-button">
+            <input type="text" id='filter-input' placeholder="Введите запрос" class="search">
+            <img src="img/tia.png" class="keyboard pointer">
+            </div>
+            <img src="img/search2.png" class="search-icon pointer">
+        </div>
+        
+        <div class="right-side-buttons ">
+            <button class="create-button opacity right-buttons-style ">
+            <a href="#"><img src="img/create.svg" alt=""></a>
+            </button>
+            <button class="application-button opacity right-buttons-style ">
+                <a href="#"><img src="img/application.svg" alt=""></a>
+            </button>
+            <button class="settings-button opacity right-buttons-style ">
+                <a href="#"><img src="img/settings.svg" alt=""></a>
+            </button>
+            <button class="user-button">
+                <img src="img/User.svg" alt=""> 
+                <span class="user-button-enter">ВОЙТИ</span>     
+            </button>
+        </div>
+    </header>
 
-						<div class="divider"></div>
+    <div id="menu">
+        <ul id="closed-menu">
+            <li class="divider-head"></li>
+            <li class="home-closed closed-size opacity" id="home-closed">
+                <img src="img/home-24px.svg" class="home-closed-icon" alt="">
+                <span class="home-closed-text">
+                    <a href="#">Главная</a>
+                </span>
+            </li>
+            <li class="trend-closed closed-size pointer">
+                <img src="img/fire.png" class="trend-closed-icon " alt="">
+                <span class="trend-closed-text">
+                    <a href="#">В тренде</a>
+                </span>
+            </li>
+            <li class="subscribe-closed closed-size pointer opacity">
+                <img src="img/subscriptions.svg"  class="subscribe-closed-icon" alt="">
+                <span class="subscribe-closed-text">
+                    <a href="#">Подписки</a>
+                </span>
+            </li>
+            <li class="library-closed closed-size pointer opacity">
+                <img src="img/library.svg" class="library-closed-icon" alt="">
+                <span class="library-closed-text">
+                    <a href="#">Библиотека</a>
+                </span>
+            </li>
+        </ul>   
 
-						<li class="library">
-							<img src="img/library.svg" class="library-icon" alt="">
-							<span class="library-text">
-								<a href="#">Библиотека</a>
-							</span>
-						</li>
-						<li class="history">
-							<img src="img/history-24px.svg" class="history-icon" alt="">
-							<span class="history-text">
-								<a href="#">История</a>
-							</span>
-						</li>
-						<li class="your-video">
-							<img src="img/play_arrow.svg" class="your-video-icon" alt="">
-							<span class="your-video-text">
-								<a href="#">Ваши видео</a>
-							</span>
-						</li>
-						<li class="later">
-							<img src="img/later.png" class="later-icon" alt="">
-							<span class="later-text">
-								<a href="#"><a href="#">Смотреть позже</a>
-							</span>
-						</li>
-						<li class="liked">
-							<img src="img/thumb_up.svg" class="liked-icon" alt="">
-							<span class="liked-text">
-								<a href="#">Понравившиеся</a>
-							</span>
-						</li>
-						<div class="divider"></div>
+        <ul class="submenu" id="submenu">
+            <li class="divider-nc"></li>
+            <li class="home pointer open-menu">
+                <img src="img/home-24px.svg" class="home-icon opacity" alt="">
+                <span class="home-text">
+                    <a href="#">Главная</a></span>
+                </li>
+                <li class="trend position pointer open-menu">
+                    <img src="img/fire.png" class="trend-icon" alt="">
+                    <span class="trend-text">
+                        <a href="#">В тренде</a>
+                    </span>
+                </li>
+                <li class="subscribe position pointer open-menu">
+                    <img src="img/subscriptions.svg"  class="subscribe-icon opacity" alt="">
+                    <span class="subscribe-text">
+                        <a href="#">Подписки</a></span>
+                    </li>
 
-						<li class="login-in-menu">
-						Вы сможете ставить
-						<br>отметки "Нравится",
-						<br>писать комментарии и
-						<br>подписываться на
-						<br>каналы.<br>
-						<button class="user-button-in-menu">
-							<img src="img/User.svg" alt=""> 
-							<span class="user-button-enter">ВОЙТИ</span>	 
-						</button>
-						</li>
-						<div class="divider"></div>
+                    <div class="divider"></div>
 
-						
-						<li class="the-best">ЛУЧШЕЕ НА YOUTUBE</li>
-						<li class="music">
-							<img src="img/music.svg" class="music-icon" alt="">
-							<span class="music-text">
-								<a href="#">Музыка</a>
-							</span>
-						</li>
-						<li class="sport">
-							<img src="img/sport.svg" class="sport-icon" alt="">
-							<span class="sport-text">
-								<a href="#">Спорт</a>
-							</span>
-						</li>
-						<li class="game">
-							<img src="img/game1.png" class="game-icon" alt="">
-							<span class="game-text">
-								<a href="#">Видеоигры</a>
-							</span>
-						</li>
-						<li class="movies"><img src="img/movies.svg" class="movies-icon" alt="">
-							<span class="movies-text">
-								<a href="#">Фильмы</a>
-							</span>
-						</li>
-						<li class="news">
-							<img src="img/news.svg" class="news-icon" alt="">
-							<span class="news-text">
-								<a href="#">Новости</a>
-							</span>
-						</li>
-						<li class="live-brodcoast">
-							<img src="img/live-brodcoast.svg" class="live-brodcoast-icon" alt="">
-							<span class="live-brodcoast-text">
-								<a href="#">Прямые трансляции</a>
-							</span>
-						</li>
-						<li class="yt-russia">
-							<img src="img/yt-russia.svg" class="yt-russia-icon" alt="">
-							<span class="yt-russia-text">
-								<a href="#">В центре внимания</a>
-							</span>
-						</li>
-						<li class="vr-videos">
-							<img src="img/vr-videos.svg" class="vr-videos-icon" alt="">
-							<span class="vr-videos-text">
-								<a href="#">Панорамные видео</a>
-							</span>
-						</li>
+                    <li class="library position pointer open-menu ">
+                        <img src="img/library.svg" class="library-icon opacity second-section-icons " alt="">
+                        <span class="library-text">
+                            <a href="#">Библиотека</a>
+                        </span>
+                    </li>
+                    <li class="history position pointer open-menu second-section">
+                        <img src="img/history-24px.svg" class="history-icon opacity second-section-icons" alt="">
+                        <span class="history-text">
+                            <a href="#">История</a>
+                        </span>
+                    </li>
+                    <li class="pointer position open-menu second-section ">
+                        <img src="img/play_arrow.svg" class="your-video-icon opacity second-section-icons" alt="">
+                        <span class="your-video-text">
+                            <a href="#">Ваши видео</a>
+                        </span>
+                    </li>
+                    <li class="pointer open-menu position second-section">
+                        <img src="img/later.png" class="later-icon opacity  second-section-icons" alt="">
+                        <span class="later-text">
+                            <a href="#"><a href="#">Смотреть позже</a>
+                        </span>
+                    </li>
+                    <li class="pointer position open-menu">
+                        <img src="img/thumb_up.svg" class="liked-icon opacity  second-section-icons" alt="">
+                        <span class="liked-text">
+                            <a href="#">Понравившиеся</a>
+                        </span>
+                    </li>
+                    <div class="divider"></div>
 
-						<div class="divider"></div>
-						<li class="catalog">
-							<img src="img/catalog.svg" class="catalog-icon" alt="">
-							<span class="catalog-text">
-								<a href="#">Каталог каналов</a>
-							</span>
-						</li>
-						<div class="divider"></div>
-						<li class="the-best">ДРУГИЕ ВОЗМОЖНОСТИ</li>
-						<li class="premium">
-							<img src="img/yt-premium.png" class="premium-icon" alt="">
-							<span class="premium-text">
-								<a href="#">YouTube Premium</a>
-							</span>
-						</li>
-						<li class="brodcoast">
-							<img src="img/brodcoast.svg" class="brodcoast-icon" alt="">
-							<span class="brodcoast-text">
-								<a href="#">Трансляции</a>
-							</span>
-						</li>
-						<div class="divider"></div>
-						<li class="menu-settings">
-							<img src="img/menu-settings.svg" class="menu-settings-icon" alt="">
-							<span class="menu-settings-text">
-								<a href="#">Настройка</a>
-							</span>
-						</li>
-						<li class="complaints">
-							<img src="img/complaints.svg" class="complaints-icon" alt="">
-							<span class="complaints-text">
-								<a href="#">Жалобы</a>
-							</span>
-						</li>
-						<li class="help">
-							<img src="img/help.svg" class="help-icon" alt="">
-							<span class="help-text">
-								<a href="#">Справка</a>
-							</span>
-						</li>
-						<li class="review">
-							<img src="img/review.svg" class="review-icon" alt="">
-							<span class="review-text">
-								<a href="#">Отправить отзыв</a>
-							</span>
-						</li>
+                    <li class="login-in-menu">
+                        Вы сможете ставить
+                        <br>отметки "Нравится",
+                        <br>писать комментарии и
+                        <br>подписываться на
+                        <br>каналы.<br>
+                        <button class="user-button-in-menu">
+                            <img src="img/User.svg" alt=""> 
+                            <span class="user-button-enter">ВОЙТИ</span>     
+                        </button>
+                    </li>
+                    <div class="divider"></div>
 
-						<div class="divider"></div>
 
-						<div class="service">
-						О сервисе  Прессе
-						Правообладателям
-						<br>Связаться с нами  Авторам
-						<br>Рекламодателям
-						<br>Разработчикам
-						</div>
-						<div class="service">
-						<br>Условия использования
-						<br>Конфиденциальность
-						<br>Правила и безопасность
-						<br>Новые функции.
-						</div>
+                    <li class="the-best">ЛУЧШЕЕ НА YOUTUBE</li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/music.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text ">
+                            <a href="#">Музыка</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/sport.svg" class="other-sections-icons " alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Спорт</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/game1.png" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Видеоигры</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/movies.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Фильмы</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/news.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Новости</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/live-brodcoast.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Прямые трансляции</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/yt-russia.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">В центре внимания</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/vr-videos.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Панорамные видео</a>
+                        </span>
+                    </li>
 
-						<div class="copyright">
-							© 2020 Google LLC
-						</div>
-					</ul>
-				</div>
-					<div id="wrapper">
-						<div id="articles">
-					</div>
-				</div>
-		    </div>
-		</nav>
- 
-	
-	<script src="script/script.js"></script>
+                    <div class="divider"></div>
+                    <li class="open-menu pointer other-sections ">
+                        <img src="img/catalog.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Каталог каналов</a>
+                        </span>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="the-best">ДРУГИЕ ВОЗМОЖНОСТИ</li>
+                    <li class="open-menu pointer other-sections">
+                        <img src="img/yt-premium.png" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">YouTube Premium</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections">
+                        <img src="img/brodcoast.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Трансляции</a>
+                        </span>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="open-menu pointer other-sections">
+                        <img src="img/menu-settings.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Настройка</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections">
+                        <img src="img/complaints.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Жалобы</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections">
+                        <img src="img/help.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Справка</a>
+                        </span>
+                    </li>
+                    <li class="open-menu pointer other-sections">
+                        <img src="img/review.svg" class="other-sections-icons" alt="">
+                        <span class="other-sections-text">
+                            <a href="#">Отправить отзыв</a>
+                        </span>
+                    </li>
+
+                    <div class="divider"></div>
+
+                    <div class="service-1">
+                        О сервисе  Прессе
+                        Правообладателям
+                        Связаться с нами  Авторам
+                        Рекламодателям
+                        <br>Разработчикам
+                    </div>
+                    <div class="service-2">
+                        Условия использования
+                        <br>Конфиденциальность
+                        <br>Правила и безопасность
+                        <br>Новые функции.
+                    </div>
+                    <div class="space">
+                    </div>
+                    <div class="copyright opacity">
+                        © 2020 Google LLC
+                    </div>
+                </ul>
+                <div id="wrapper">
+                    <div id="articles">
+                    </div>
+                </div>
+            </div>
+
+    
+    <script src="script/script.js"></script>
 </body>
 </html>
