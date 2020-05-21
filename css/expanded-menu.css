@@ -1,27 +1,25 @@
-.open-menu {
+.expanded-menu-item {
+	display: flex;
+	cursor: pointer;
 	padding: 10px 0 5px 0px;
 	margin-left: 5px;
 }
 
-.open-menu:hover {
+.expanded-menu-item:hover {
 	background: rgba(0,0,0,0.1);
 }
 
-.position  {
-	display: flex;
-	padding: 10px 0 5px 0px;
-	margin-left: 5px;
-}
-
+ 
  
 .home {
-	margin-top: 8px;
+	margin-top: 200px;
 	display: flex;
 	padding: 8px 0 8px 0;
 }
 
 .home-icon {
-	padding: 0 21px 0;
+	opacity: .6;
+	padding: 0 22px 0;
 }
 
 .home-text {
@@ -47,9 +45,13 @@
 	margin-left: 12px;
 }
 
+.subscribe {
+	padding: 10px 0 10px 0px;
+}
 
 .subscribe-icon {
-	padding: 0 22px 0;
+	opacity: .6;
+	padding: 0 22px;
 	height: 20px;
 }
 
@@ -59,12 +61,8 @@
 }
 
 
-.second-section {
-	display: flex;
-	padding: 10px 0 5px 0px;
-}
-
 .second-section-icons {
+	opacity: .6;
 	padding: 0 15px 0;
 	margin-left: 10px;
 	height: 24px;
@@ -98,14 +96,17 @@
 
 .other-sections {
 	display: flex;
-	padding: 10px 0 10px 0px;
+	padding: 10px 0 5px 0px;
 }
 
 .other-sections-icons {
-	opacity: .7;
 	padding: 0 15px;
 	margin-left: 10px;
 	height: 24px;
+}
+
+.other-sections-icons-opacity {
+	opacity: .7;
 }
 
 .other-sections-text {
@@ -113,21 +114,21 @@
 	margin-left: 5px;
 }
 
-.service-1 {
+.primary-service-style {
+	color: var(--primary-text-color);
 	opacity: .8;
-	padding: 4px 24px 0;
+	padding: 4px 24px  0 24px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height:18px;
 }
 
-.service-2 {
-	opacity: .8;
+.second-service-style {
 	padding: 12px 24px 0;
 }
 
-.space {
-	padding: 8px 24px;
-}
-
 .copyright {
-	font-weight: 400;
-	padding: 16px 24px 10px;
+	color: rgb(144,144,144);
+	padding: 32px 24px 15px;
+	font-size: 13px;
 }

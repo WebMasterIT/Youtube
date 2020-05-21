@@ -13,7 +13,6 @@
 }
 
 #wrapper #articles article {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     height: 200px;
@@ -22,26 +21,26 @@
 }
 
 .preview {
-	position: relative;
+    position: relative;
 }
 
 .preview img {
-	width: 100%;
+    width: 100%;
     height: 200px;
     margin-bottom: 10px;
 }
 
 .avatar img {
-	width: 36px;
-	height: 36px;
-	position: absolute;
-	border-radius: 50%; 
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    border-radius: 50%; 
 }
 
-.videoName {
-	display: flex;
-	width: 312px;
-	margin-top: 3px;
+#videoName {
+    display: flex;
+    width: 312px;
+    margin-top: 3px;
     margin-left: 50px;
     font-size: 16px;
     line-height: 1.4;
@@ -50,78 +49,106 @@
 
 
 
-.videoSettings {
-	opacity: .6;
-	margin-left: -3px;
+#videoSettings {
+    opacity: .6;
+    margin-left: -3px;
 }
 
 .videoInfo {
-	display: flex;
-	flex-direction: column;
-	font-weight: 400;
-	line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    line-height: 1.3;
 }
 
 .chanelName {
-	margin-left: 50px;
-	margin-top: 5px;
+    color: var(--secondary-text-color);
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 .videoViews {
-	display: flex;
-	margin-left: 50px;	
+    display: flex;
+    margin-left: 50px;  
 }
 
 .viewsInfo {
-	display: flex;
+    display: flex;
 }
 
 .videoViews::after {
-	content: "•";
-	margin: 0 4px;
+    content: "•";
+    margin: 0 4px;
 }
 
 .videoTime {
-	position: absolute;
-	top: 84%;
-	left: 87%;
-	color: #fff;
-	padding: 2px 3px;
-	font-size: 12px;
-	letter-spacing: 1px;
-	font-weight: bold;
-	background-color: black;
+    position: absolute;
+    top: 84%;
+    left: 87%;
+    color: #fff;
+    padding: 2px 3px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: black;
 }
 
 .videoClock img  {
-	width: 29px;
-	height: 29px;
-	top: 2%;
-	left: 91%;
-	position: absolute;
-	background-color: black;
-	border: 2px solid black;
+    width: 29px;
+    height: 29px;
+    top: 2%;
+    left: 91%;
+    position: absolute;
+    background-color: black;
+    border: 2px solid black;
 }
 
 .videoPlaylist img {
-	width: 29px;
-	height: 29px;
-	top: 17%;
-	left: 91%;
-	padding: 0  0 0 3px;
-	position: absolute;
-	background-color: black;
-	border: 1px solid;
+    width: 29px;
+    height: 29px;
+    top: 17%;
+    left: 91%;
+    padding: 0  0 0 3px;
+    position: absolute;
+    background-color: black;
+    border: 1px solid;
 }
- 
-@media (max-width: 1800px) {
-    .submenu {
-        width: 15%;
+
+@media (min-width: 576px) {
+    #expanded-menu {
+       display: none;
+    }
+
+    .rolled-up-menu {
+        display: block;
     }
 }
 
-@media (min-width: 700px) {
-    .submenu {
-        width: 15%;
+
+@media (min-width: 768px) {
+    #expanded-menu {
+       display: none;
     }
+
+    .rolled-up-menu {
+        display: block;
+    }
+}
+
+
+@media (max-width: 992px)  {
+
+    #expanded-menu {
+       display: none;
+    }
+
+}
+
+
+
+@media (min-width: 1080px) { 
+
+#expanded-menu {
+       display: block;
+    }
+
 }

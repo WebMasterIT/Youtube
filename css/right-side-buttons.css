@@ -9,6 +9,7 @@
 }
 
 .create-button {
+	opacity: .6;
 	width: 48px;
 	height: 48px;
 }
@@ -22,21 +23,24 @@
 }
 
 .application-button img {
+	opacity: .6;
 	margin-top: 10px;
 	margin-left: 6px;
 }
 
 .settings-button img {
+	opacity: .6;
 	margin-top: 5px;
-	margin-left: 10px;
+	margin-left: 12px;
 	margin-right: 10px;
 }
 
 .user-button {
+	cursor: pointer;
 	width: 102px;
 	height: 40px;
 	margin-top: 8px;
-	margin-right: 18px;
+	margin-right: 26px;
 	background-color: transparent;
 	border: 1px solid #065FD4;
 }

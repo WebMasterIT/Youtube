@@ -20,6 +20,7 @@
 .search-icon {
 	width: 64px;
 	height: 28px;
+	cursor: pointer;
 	margin-top: 14px;
 	border: 1px solid #C0C0C0;
 }
@@ -34,4 +35,5 @@
 	position: absolute;
 	top: 23px;
  	right: 12px;
+ 	cursor: pointer;
 }

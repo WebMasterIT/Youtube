@@ -4,6 +4,7 @@
 }
 
 #menu-button {
+	cursor: pointer;
 	outline: none;
 	border: none;
 	background-color: transparent;
@@ -18,6 +19,7 @@
 }
 
 .logo-button {
+	cursor: pointer;
 	position: relative; 
 	border: none;
 	background-color: transparent;

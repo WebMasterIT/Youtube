@@ -1,4 +1,4 @@
-#closed-menu {
+#rolled-up-menu {
 	display: none;
 	height: 100vh;
 	margin-bottom: 0;
@@ -8,7 +8,11 @@
 	list-style-type: none;
 }
 
-.closed-size {
+#rolled-up-menu:nth-first-child {
+	margin-top: 10px;
+}
+
+.rolled-up-menu-item {
 	height: 70px;
 	display: flex;
 	flex-direction: column;
@@ -16,11 +20,17 @@
 	padding: 16px 0 14px;
 	font-size: 10px;
 	text-align: center;
+	cursor: pointer;
 }
 
-.closed-size:hover {
+.rolled-up-menu-item:hover {
 	background: rgba(0,0,0,0.1);
 }
+
+.rolled-up-menu-item-opacity {
+	opacity: .7;
+}
+
 
 .home-closed-text {
 	text-align: center;
@@ -29,9 +39,7 @@
 
 .trend-closed-icon {
 	padding: 0 27px 0;
-	 
 	height: 24px;
-	 
 }
 
 .trend-closed-text {

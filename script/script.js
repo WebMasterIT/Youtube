@@ -1,400 +1,43 @@
 var menu = document.getElementById('menu-button') ;
-menu.addEventListener('click', OpenMenu);
+menu.addEventListener('click', openMenu);
 
-
-function OpenMenu() {
-var submenu = document.getElementById('submenu') ;
-var closedMenu = document.getElementById('closed-menu') ;
-  if (submenu.style.display !== 'none'){
-    submenu.style.display="none";
-    closedMenu.style.display="block";
+// Функция открытия/закрытия меню
+function openMenu() {
+var expandedMenu = document.getElementById('expanded-menu') ;
+var rolledUpMenu = document.getElementById('rolled-up-menu') ;
+var articles = document.getElementById('articles');
+var videoName = document.getElementById('videoName');
+  if (expandedMenu.style.display !== 'none'){
+    expandedMenu.style.display = "none";
+    rolledUpMenu.style.display = "block";
+    articles.style.gridTemplateColumns = "345px 345px 345px 345px 345px";
+    articles.style.marginLeft = "25px";
+    videoName.style.width = "300px";
   } else {
-    submenu.style.display="block";
-    closedMenu.style.display="none";
+    expandedMenu.style.display ="block";
+    rolledUpMenu.style.display ="none";
+    articles.style.gridTemplateColumns = "360px 360px 360px 360px";
+    articles.style.marginLeft = "80px";
+    videoName.style.width = "312px";
   }
 };
 
-// var homeClosedButton = document.getElementById('home-closed') ;
-// homeClosedButton.addEventListener('click', activeMenu);
+// Функция выделения элемента меню при клике
 
-// function activeMenu() {
-//     if (homeClosedButton.style.backgroundColor == ''){
-//     homeClosedButton.style.backgroundColor = 'yellow';
-//   }
-// }
+var expandedMenu = document.getElementById('expanded-menu');
 
-let elements = document.querySelectorAll('ul > li');
-// elements.addEventListener('click', activeMenu);
+expandedMenu.addEventListener('click', function(e) {
+    const items = document.querySelectorAll('.expanded-menu-item')
+    const target = e.target
+    Array.from(items).forEach(item => {
+    item.classList.remove('active')
+  })
+  target.classList.add('active');
+  target.setAttribute('src','img/complaints.svg')
 
-for (var i = 0; i < elements.length; i++) {
-  elements[i].onclick = function(){
-    elements[i].style.fontWeight = '500';
-    elements[i].style.backgroundColor = '#C9C9C9'
-  };
-}
-
-// var homeButton = document.querySelector('.home');
+})
 
 
-
-// homeButton.addEventListener('click', activeMenu);
-
-function activeMenu() {
-    if (elements.style.backgroundColor == ''){
-    elements.style.fontWeight = '500';
-    elements.style.backgroundColor = '#C9C9C9'
-  }
-}
-
-var data = [{
-    imgSrc: 'img/articles/10.png',
-    avatarImg: 'img/articles/0014.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '11:40',
-    videoName: 'ЧЕЛОВЕК ПАУК ВЛЕТАЕТ В ЧАТ РУЛЕТКУ',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'NIK',
-    videoViews: '3.1 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/11.png',
-    avatarImg: 'img/articles/11.png',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: 'Почему замедляется время вблизи массивных планет',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/12.jpg',
-    avatarImg: 'img/articles/12.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: '5 приключенческих книг, от которых невозможно оторваться',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/13.jpg',
-    avatarImg: 'img/articles/13.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: 'Получить образование в США и не разориться: как сэкономить на учёбе $40 000',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/14.jpg',
-    avatarImg: 'img/articles/14.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: 'Мама почти ничего мне не запрещала": чего ждут от нас дети',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/15.jpg',
-    avatarImg: 'img/articles/15.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: 'Как мы учились этим летом: дни самоуправления, неделя Испании и уроки',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/16.jpg',
-    avatarImg: 'img/articles/16.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: 'Почему школе пора отказаться от «выканья»',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/18.jpg',
-    avatarImg: 'img/articles/18.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: '«В нашей школе прогулы стали массовыми»: кто и как прогуливает школу',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/19.jpg',
-    avatarImg: 'img/articles/19.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '10:00',
-    videoName: '12 книг-бестселлеров для детей и подростков',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/20.jpg',
-    avatarImg: 'img/articles/20.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '08:40',
-    videoName: 'Как мы учились этим летом: дни самоуправления, неделя Испании и уроки',
-    videoSettings: 'img/settings.svg',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/21.jpg',
-    avatarImg: 'img/articles/20.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '08:40',
-    videoName: '7 признаков классного учителя',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/22.png',
-    avatarImg: 'img/articles/20.jpg',
-    videoClock: 'img/videoClock.png',
-    videoPlaylist: 'img/videoPlaylist.svg',
-    videoTime: '08:40',
-    videoName: 'Подростковые конфликты: как их решить личным примером',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/23.jpg',
-    videoName: 'Почему дети воруют: тревога, принуждение и не только',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/24.png',
-    videoName: 'Как мы учились этим летом: дни самоуправления, неделя Испании и уроки',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/25.jpg',
-    videoName: '5 правил хорошего репетитора',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/26.jpg',
-    videoName: '«Бьёт — значит любит» и «самадуравиновата»: как семья и общество поддерживают насилие',
-    videoSettings: 'img/settings.svg',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/27.jpg',
-    videoName: '5 эффективных способов избавиться от языкового барьера',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/28.jpg',
-    videoName: '«А ещё кружок по фото»: зачем мы так загружаем детей и кому это выгодно',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/29.jpg',
-    videoName: 'Как отпустить ребёнка жить в другом городе: 4 важных фактора',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/30.jpg',
-    videoName: 'Как сдать ЕГЭ без репетиторов, регистрации и СМС',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/31.jpg',
-    videoName: '6 книг, которые помогут в решении семейных проблем',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/32.jpg',
-    videoName: '«Он первый начал!»: как взрослые поощряют маленькое насилие',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/33.jpg',
-    videoName: 'От свободы к вседозволенности: как сохранять баланс в воспитании',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/34.jpg',
-    videoName: 'Не ругайте ребёнка за лень. Лучше разберитесь, почему он «ленится»',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/35.jpg',
-    videoName: 'Что после титров? 5 сериалов по мотивам популярных мультфильмов',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/36.jpg',
-    videoName: 'Что такое целевое направление и стоит ли игра свеч',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/37.png',
-    videoName: '3 способа помочь ребёнку развить инициативу',
-    chanelName: 'Finn',
-    videoViews: '3 млн просмотров',
-    videoLoad: '22',
-
-},
-{
-    imgSrc: 'img/articles/38.png',
-    videoName: '«Ты тупая, потому что в школу не ходишь»: как пугают тех, кто выбирает образование вне школы',
-    chanelName: 'Finn',
-    videoViews: '2,9 млн просмотров',
-    videoLoad: '3 месяца назад',
-},
-{
-    imgSrc: 'img/articles/39.jpg',
-    videoName: 'Старшеклассник-репетитор: идея, как изменить школу',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/40.jpg',
-    videoName: '10 знаменитых мальчиков-сирот в детской литературе',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/41.jpg',
-    videoName: '6 книг, которые станут отличным подарком к Новому году',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/42.png',
-    videoName: '3 простых совета, как «отлепить» ребёнка от экрана',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/43.jpg',
-    videoName: 'Это ваши права: всё про семейное и заочное обучение',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/44.jpg',
-    videoName: 'Как мы учились этим летом: дни самоуправления, неделя Испании и уроки',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/45.jpg',
-    videoName: '7 причин, почему дети не хотят учиться',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-
-},
-{
-    imgSrc: 'img/articles/46.jpg',
-    videoName: '«Ты молодец, но…»: стоит ли критиковать детей',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/47.jpg',
-    videoName: 'Как написать план на ЕГЭ по обществознанию на максимальный балл',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/48.jpg',
-    videoName: 'День благодарения: индейка, тыквенный пирог и традиции',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-},
-{
-    imgSrc: 'img/articles/49.jpg',
-    videoName: '«Пока, любимый! Мама пойдёт выпьет кофе». Как живёт итальянский детский сад',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-
-},
-{
-    imgSrc: 'img/articles/50.jpg',
-    videoName: 'Как не перегореть до начала экзаменов',
-    chanelName: 'Finn',
-    videoViews: '108 тыс. просмотров',
-    videoLoad: '10 дней назад',
-}
-]
 
 // Функция создания карточки
 function createCard(i) {
@@ -410,7 +53,6 @@ function createCard(i) {
     var videoViews = data[i].videoViews;
     var videoLoad = data[i].videoLoad;
     var videoSettings = data[i].videoSettings;
-    // var description = getCardsInfo(data[i])
     var wrapper = document.getElementById('articles');
     card.innerHTML = `
     <div class='preview'>
@@ -430,9 +72,9 @@ function createCard(i) {
     <div class="avatar">
         <img src="${avatarImg}" alt="Изображение" title="Изображение">
     </div> 
-    <div class="videoName"> 
+    <div id="videoName"> 
         ${videoName} 
-      <div class="videoSettings">
+      <div id="videoSettings">
         <img src="${videoSettings}" alt="Изображение" title="Изображение">
       </div>
     </div>
@@ -454,41 +96,7 @@ function createCard(i) {
     wrapper.appendChild(card);
 }
 
-function getCardsInfo(item) {
-    if (item.readTimeIcon) {
-        return ` <i class="fas fa-clock"></i> Читать: 3 минуты ${item.readTimeIcon}`
-    } else {
-        return `<div class="articleViwes">
-        <i class="far fa-eye"></i> ${item.videoTime}
-        </div>
-        <div class="articleViwes">
-        <i class="fas fa-comment-alt"></i> ${item.videoTime}
-        </div>`;
-    }
-}
-
-function pastTemplate() {
-    var card = document.querySelector('#tmpl')
-    var imgSrc = data[i].imgSrc;
-    var text = data[i].videoName;
-    var videoViews = data[i].videoViews;
-    var videoTime = data[i].videoTime;
-
-    var cardContent = card.content;
-    cardContent.querySelector('.videoName').innerText = `${text}`;
-    cardContent.querySelector(".chanelName").innerHTML = `<i class="far fa-eye"></i> ${videoTime}
-    </div>
-    <div class="articleViwes">
-    <i class="fas fa-comment-alt"></i> ${iconComment}`;
-
-    cardContent.querySelector('.canvas').src = `${imgSrc}`;
-
-    var clone = document.importNode(card.content, true);
-
-    articles.appendChild(clone);
-}
-
-for (i = 0; i < 8; i++) {
+for (i = 0; i < 12; i++) {
     createCard(i);
 }
 
