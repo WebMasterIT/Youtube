@@ -1,15 +1,18 @@
 #rolled-up-menu {
 	display: none;
 	height: 100vh;
+	top: 0;
+  	left: 0;
 	margin-bottom: 0;
-	margin-top: 0;
+	margin-top: 54px;
 	width: 70px;
+	position: fixed;
 	background-color: #fff;
 	list-style-type: none;
 }
 
 #rolled-up-menu:nth-first-child {
-	margin-top: 10px;
+	margin-top: 40px;
 }
 
 .rolled-up-menu-item {

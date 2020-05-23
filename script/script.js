@@ -11,18 +11,18 @@ var videoName = document.getElementById('videoName');
     expandedMenu.style.display = "none";
     rolledUpMenu.style.display = "block";
     articles.style.gridTemplateColumns = "345px 345px 345px 345px 345px";
-    articles.style.marginLeft = "25px";
+    articles.style.marginLeft = "100px";
     videoName.style.width = "300px";
   } else {
     expandedMenu.style.display ="block";
     rolledUpMenu.style.display ="none";
     articles.style.gridTemplateColumns = "360px 360px 360px 360px";
-    articles.style.marginLeft = "80px";
+    articles.style.marginLeft = "280px";
     videoName.style.width = "312px";
   }
 };
 
-// Функция выделения элемента меню при клике
+// Функция выделения элемента меню при клике для развернутого меню
 
 var expandedMenu = document.getElementById('expanded-menu');
 
@@ -37,6 +37,21 @@ expandedMenu.addEventListener('click', function(e) {
 
 })
 
+
+// Функция выделения элемента меню при клике для свернутого меню
+
+var rolledUpMenu = document.getElementById('rolled-up-menu');
+
+rolledUpMenu.addEventListener('click', function(e) {
+    const items = document.querySelectorAll('.rolled-up-item')
+    const target = e.target
+    Array.from(items).forEach(item => {
+    item.classList.remove('active')
+  })
+  target.classList.add('active');
+  target.setAttribute('src','img/complaints.svg')
+
+})
 
 
 // Функция создания карточки
@@ -96,7 +111,7 @@ function createCard(i) {
     wrapper.appendChild(card);
 }
 
-for (i = 0; i < 12; i++) {
+for (i = 0; i < 30; i++) {
     createCard(i);
 }
 
