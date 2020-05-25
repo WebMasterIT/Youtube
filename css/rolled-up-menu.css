@@ -11,8 +11,9 @@
 	list-style-type: none;
 }
 
-#rolled-up-menu:nth-first-child {
-	margin-top: 40px;
+
+.rolled-up-menu-item:first-child  {
+	margin-top: 5px;
 }
 
 .rolled-up-menu-item {

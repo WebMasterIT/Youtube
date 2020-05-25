@@ -6,15 +6,14 @@
 #expanded-menu {
 	position: fixed;
   	top: 0;
-  	left: 0;
-	width: 240px;
+ 	width: 240px;
 	padding: 0;
-	margin-top: 0;
+	/*margin-top: 0;*/
 	list-style-type: none;
 	background-color: #fff;
 	margin-bottom: 0;
 	margin-top: 54px;
-	height: 100vh;
+	height: 94vh;
 	overflow: hidden;
 }
 

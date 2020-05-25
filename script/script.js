@@ -6,52 +6,32 @@ function openMenu() {
 var expandedMenu = document.getElementById('expanded-menu') ;
 var rolledUpMenu = document.getElementById('rolled-up-menu') ;
 var articles = document.getElementById('articles');
-var videoName = document.getElementById('videoName');
   if (expandedMenu.style.display !== 'none'){
     expandedMenu.style.display = "none";
     rolledUpMenu.style.display = "block";
     articles.style.gridTemplateColumns = "345px 345px 345px 345px 345px";
     articles.style.marginLeft = "100px";
-    videoName.style.width = "300px";
   } else {
     expandedMenu.style.display ="block";
     rolledUpMenu.style.display ="none";
     articles.style.gridTemplateColumns = "360px 360px 360px 360px";
     articles.style.marginLeft = "280px";
-    videoName.style.width = "312px";
   }
 };
 
-// Функция выделения элемента меню при клике для развернутого меню
-
-var expandedMenu = document.getElementById('expanded-menu');
-
-expandedMenu.addEventListener('click', function(e) {
-    const items = document.querySelectorAll('.expanded-menu-item')
-    const target = e.target
-    Array.from(items).forEach(item => {
-    item.classList.remove('active')
-  })
-  target.classList.add('active');
-  target.setAttribute('src','img/complaints.svg')
-
-})
 
 
-// Функция выделения элемента меню при клике для свернутого меню
+let elements = document.querySelectorAll(".expanded-menu-item");
 
-var rolledUpMenu = document.getElementById('rolled-up-menu');
+for (var i = 0; i < elements.length; i++) {
+    addClickHandler(elements[i]);
+}
 
-rolledUpMenu.addEventListener('click', function(e) {
-    const items = document.querySelectorAll('.rolled-up-item')
-    const target = e.target
-    Array.from(items).forEach(item => {
-    item.classList.remove('active')
-  })
-  target.classList.add('active');
-  target.setAttribute('src','img/complaints.svg')
-
-})
+function addClickHandler(element) {
+    element.onclick = function(event) {
+         element.classList.add('active');
+    }
+}
 
 
 // Функция создания карточки
@@ -89,11 +69,11 @@ function createCard(i) {
     </div> 
     <div id="videoName"> 
         ${videoName} 
-      <div id="videoSettings">
-        <img src="${videoSettings}" alt="Изображение" title="Изображение">
-      </div>
     </div>
-    
+    <div id="videoSettings">
+        <img src="${videoSettings}" alt="Изображение" title="Изображение">
+    </div>
+    </div>
     <div class="videoInfo">
         <div class="chanelName"> 
             ${chanelName}
@@ -106,7 +86,7 @@ function createCard(i) {
                 ${videoLoad}
             </div>
         </div> 
-        </div>
+        
     </div>`;
     wrapper.appendChild(card);
 }

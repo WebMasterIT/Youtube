@@ -9,7 +9,9 @@
 	background: rgba(0,0,0,0.1);
 }
 
- 
+.expanded-menu-item:first-child {
+	margin-top: 5px;
+}
  
 .home {
 	margin-top: 200px;
@@ -94,22 +96,22 @@
 }
 
 
-.other-sections {
+.the-best-on-youtube {
 	display: flex;
 	padding: 10px 0 5px 0px;
 }
 
-.other-sections-icons {
+.the-best-on-youtube-icons {
 	padding: 0 15px;
 	margin-left: 10px;
 	height: 24px;
 }
 
-.other-sections-icons-opacity {
+.the-best-on-youtube-icons-opacity {
 	opacity: .7;
 }
 
-.other-sections-text {
+.the-best-on-youtube-text {
 	margin-top: 2px;
 	margin-left: 5px;
 }
