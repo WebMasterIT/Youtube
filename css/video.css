@@ -1,0 +1,37 @@
+/* body {
+	position: relative;
+} */
+
+.youTuberModal {
+    color: #fff !important;
+    display: none;
+    z-index: 1100;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    background: #000; 
+    height: 100%;
+    border: transparent;
+ 
+}
+
+#youTuberContainer  { 
+     
+    width: auto;
+    margin-top: 100px; 
+    z-index: 1102; 
+}
+
+iframe { 
+    border: none;
+}
+
+#youTuberClose {
+    margin-left: auto;
+    margin-top: 50px;
+    height: 50px;
+    width: 60px; 
+}

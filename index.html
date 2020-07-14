@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Youtube</title>
@@ -13,32 +14,35 @@
     <link rel="stylesheet" type="text/css" href="css/rolled-up-menu.css">
     <link rel="stylesheet" type="text/css" href="css/expanded-menu.css">
     <link rel="stylesheet" href="css/wrapper.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
 
 </head>
+
 <body>
-    
+
     <header class="header">
         <div class="left-side-buttons">
-        <button id="menu-button">
-            <img src="img/hamburger.png" alt="">
-        </button>
-        <button class="logo-button">
-            <a href="https://www.youtube.com/"> <img src="img/logoword.png"></a>
-            <div><span>RU</span> </div>
-        </button>
+            <button id="menu-button">
+                <img src="img/hamburger.png" alt="">
+            </button>
+            <button class="logo-button">
+                <a href="https://www.youtube.com/"> <img src="img/logoword.png"></a>
+                <div><span>RU</span> </div>
+            </button>
         </div>
-        
+
         <div class="search-place">
             <div class="search-button">
-            <input type="text" id='filter-input' placeholder="Введите запрос" class="search">
-            <img src="img/tia.png" class="keyboard">
+                <input type="text" id='filter-input' placeholder="Введите запрос" class="search">
+                <img src="img/tia.png" class="keyboardBtn">
             </div>
             <img src="img/search2.png" class="search-icon">
         </div>
-        
+
         <div class="right-side-buttons ">
             <button class="create-button right-buttons-style">
-            <a href="#"><img src="img/create.svg" alt=""></a>
+                <a href="#"><img src="img/create.svg" alt=""></a>
             </button>
             <button class="application-button opacity right-buttons-style ">
                 <a href="#"><img src="img/application.svg" alt=""></a>
@@ -47,8 +51,8 @@
                 <a href="#"><img src="img/settings.svg" alt=""></a>
             </button>
             <button class="user-button">
-                <img src="img/User.svg" alt=""> 
-                <span class="user-button-enter">ВОЙТИ</span>     
+                <img src="img/User.svg" alt="">
+                <span class="user-button-enter">ВОЙТИ</span>
             </button>
         </div>
     </header>
@@ -68,7 +72,7 @@
                 </span>
             </li>
             <li class="rolled-up-menu-item rolled-up-menu-item-opacity">
-                <img src="img/subscriptions.svg"  class="subscribe-closed-icon" alt="">
+                <img src="img/subscriptions.svg" class="subscribe-closed-icon" alt="">
                 <span class="subscribe-closed-text">
                     <a href="#">Подписки</a>
                 </span>
@@ -79,198 +83,549 @@
                     <a href="#">Библиотека</a>
                 </span>
             </li>
-        </ul>   
+        </ul>
 
         <ul id="expanded-menu">
             <li class="expanded-menu-item">
                 <img src="img/home-24px.svg" class="home-icon" alt="">
-                <span >
+                <span>
                     <a href="#">Главная</a></span>
-                </li>
-                <li class="trend expanded-menu-item">
-                    <img src="img/fire.png" class="trend-icon" alt="">
-                    <span class="trend-text">
-                        <a href="#">В тренде</a>
-                    </span>
-                </li>
-                <li class="subscribe expanded-menu-item">
-                    <img src="img/subscriptions.svg"  class="subscribe-icon " alt="">
-                    <span class="subscribe-text">
-                        <a href="#">Подписки</a></span>
-                    </li>
+            </li>
+            <li class="trend expanded-menu-item">
+                <img src="img/fire.png" class="trend-icon" alt="">
+                <span class="trend-text">
+                    <a href="#">В тренде</a>
+                </span>
+            </li>
+            <li class="subscribe expanded-menu-item">
+                <img src="img/subscriptions.svg" class="subscribe-icon " alt="">
+                <span class="subscribe-text">
+                    <a href="#">Подписки</a></span>
+            </li>
 
-                    <div class="menu-divider"></div>
+            <div class="menu-divider"></div>
 
-                    <li class="expanded-menu-item">
-                        <img src="img/library.svg" class="library-icon second-section-icons" alt="">
-                        <span class="library-text">
-                            <a href="#">Библиотека</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item">
-                        <img src="img/history-24px.svg" class="history-icon second-section-icons" alt="">
-                        <span class="history-text">
-                            <a href="#">История</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item">
-                        <img src="img/play_arrow.svg" class="  second-section-icons" alt="">
-                        <span class="your-video-text">
-                            <a href="#">Ваши видео</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item">
-                        <img src="img/later.png" class="later-icon second-section-icons" alt="">
-                        <span class="later-text">
-                            <a href="#"><a href="#">Смотреть позже</a>
-                        </span>
-                    </li>
-                    <li class="  position expanded-menu-item">
-                        <img src="img/thumb_up.svg" class="liked-icon second-section-icons" alt="">
-                        <span class="liked-text">
-                            <a href="#">Понравившиеся</a>
-                        </span>
-                    </li>
-                    <div class="menu-divider"></div>
+            <li class="expanded-menu-item">
+                <img src="img/library.svg" class="library-icon second-section-icons" alt="">
+                <span class="library-text">
+                    <a href="#">Библиотека</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item">
+                <img src="img/history-24px.svg" class="history-icon second-section-icons" alt="">
+                <span class="history-text">
+                    <a href="#">История</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item">
+                <img src="img/play_arrow.svg" class="  second-section-icons" alt="">
+                <span class="your-video-text">
+                    <a href="#">Ваши видео</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item">
+                <img src="img/later.png" class="later-icon second-section-icons" alt="">
+                <span class="later-text">
+                    <a href="#">Смотреть позже</a>
+                </span>
+            </li>
+            <li class="  position expanded-menu-item">
+                <img src="img/thumb_up.svg" class="liked-icon second-section-icons" alt="">
+                <span class="liked-text">
+                    <a href="#">Понравившиеся</a>
+                </span>
+            </li>
+            <div class="menu-divider"></div>
 
-                    <li class="login-in-menu">
-                        Вы сможете ставить
-                        <br>отметки "Нравится",
-                        <br>писать комментарии и
-                        <br>подписываться на
-                        <br>каналы.<br>
-                        <button class="user-button-in-menu">
-                            <img src="img/User.svg" alt=""> 
-                            <span class="user-button-enter">ВОЙТИ</span>     
-                        </button>
-                    </li>
-                    <div class="menu-divider"></div>
+            <li class="login-in-menu">
+                Вы сможете ставить
+                <br>отметки "Нравится",
+                <br>писать комментарии и
+                <br>подписываться на
+                <br>каналы.<br>
+                <button class="user-button-in-menu">
+                    <img src="img/User.svg" alt="">
+                    <span class="user-button-enter">ВОЙТИ</span>
+                </button>
+            </li>
+            <div class="menu-divider"></div>
 
 
-                    <li class="the-best">ЛУЧШЕЕ НА YOUTUBE</li>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/music.svg" class="the-best-on-youtube-icons" alt="">
-                        <span class="the-best-on-youtube-text ">
-                            <a href="#">Музыка</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item  the-best-on-youtube ">
-                        <img src="img/sport.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Спорт</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item  the-best-on-youtube">
-                        <img src="img/game1.png" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Видеоигры</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item   the-best-on-youtube ">
-                        <img src="img/movies.svg" class="the-best-on-youtube-icons" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Фильмы</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item   the-best-on-youtube ">
-                        <img src="img/news.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Новости</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item   the-best-on-youtube ">
-                        <img src="img/live-brodcoast.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Прямые трансляции</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item   the-best-on-youtube ">
-                        <img src="img/yt-russia.svg" class="the-best-on-youtube-icons" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">В центре внимания</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item   the-best-on-youtube ">
-                        <img src="img/vr-videos.svg" class="the-best-on-youtube-icons" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Панорамные видео</a>
-                        </span>
-                    </li>
+            <li class="the-best">ЛУЧШЕЕ НА YOUTUBE</li>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/music.svg" class="the-best-on-youtube-icons" alt="">
+                <span class="the-best-on-youtube-text ">
+                    <a href="#">Музыка</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item  the-best-on-youtube ">
+                <img src="img/sport.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Спорт</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item  the-best-on-youtube">
+                <img src="img/game1.png" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Видеоигры</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item   the-best-on-youtube ">
+                <img src="img/movies.svg" class="the-best-on-youtube-icons" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Фильмы</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item   the-best-on-youtube ">
+                <img src="img/news.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Новости</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item   the-best-on-youtube ">
+                <img src="img/live-brodcoast.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity"
+                    alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Прямые трансляции</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item   the-best-on-youtube ">
+                <img src="img/yt-russia.svg" class="the-best-on-youtube-icons" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">В центре внимания</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item   the-best-on-youtube ">
+                <img src="img/vr-videos.svg" class="the-best-on-youtube-icons" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Панорамные видео</a>
+                </span>
+            </li>
 
-                    <div class="menu-divider"></div>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/catalog.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Каталог каналов</a>
-                        </span>
-                    </li>
-                    <div class="menu-divider"></div>
-                    <li class="the-best">ДРУГИЕ ВОЗМОЖНОСТИ</li>
-                    <li class="expanded-menu-item   the-best-on-youtube">
-                        <img src="img/yt-premium.png" class="the-best-on-youtube-icons" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">YouTube Premium</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/brodcoast.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Трансляции</a>
-                        </span>
-                    </li>
-                    <div class="menu-divider"></div>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/menu-settings.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Настройка</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/complaints.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Жалобы</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/help.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Справка</a>
-                        </span>
-                    </li>
-                    <li class="expanded-menu-item the-best-on-youtube">
-                        <img src="img/review.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
-                        <span class="the-best-on-youtube-text">
-                            <a href="#">Отправить отзыв</a>
-                        </span>
-                    </li>
+            <div class="menu-divider"></div>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/catalog.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Каталог каналов</a>
+                </span>
+            </li>
+            <div class="menu-divider"></div>
+            <li class="the-best">ДРУГИЕ ВОЗМОЖНОСТИ</li>
+            <li class="expanded-menu-item   the-best-on-youtube">
+                <img src="img/yt-premium.png" class="the-best-on-youtube-icons" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">YouTube Premium</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/brodcoast.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Трансляции</a>
+                </span>
+            </li>
+            <div class="menu-divider"></div>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/menu-settings.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity"
+                    alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Настройка</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/complaints.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity"
+                    alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Жалобы</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/help.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Справка</a>
+                </span>
+            </li>
+            <li class="expanded-menu-item the-best-on-youtube">
+                <img src="img/review.svg" class="the-best-on-youtube-icons the-best-on-youtube-icons-opacity" alt="">
+                <span class="the-best-on-youtube-text">
+                    <a href="#">Отправить отзыв</a>
+                </span>
+            </li>
 
-                    <div class="menu-divider"></div>
+            <div class="menu-divider"></div>
 
-                    <div class="primary-service-style">
-                        О сервисе  &nbsp; Прессе
-                        Правообладателям
-                        <br>Связаться с нами &nbsp; Авторам
-                        Рекламодателям
-                        <br>Разработчикам
-                    </div>
-                    <div class="primary-service-style second-service-style">
-                        Условия использования
-                        <br>Конфиденциальность
-                        <br>Правила и безопасность
-                        <br>Новые функции.
-                    </div>
-                    <div class="copyright">
-                        © 2020 Google LLC
-                    </div>
-                </ul>
-                <div id="wrapper">
-                    <div id="articles">
-                    </div>
-                </div>
+            <div class="primary-service-style">
+                О сервисе &nbsp; Прессе
+                Правообладателям
+                <br>Связаться с нами &nbsp; Авторам
+                Рекламодателям
+                <br>Разработчикам
             </div>
+            <div class="primary-service-style second-service-style">
+                Условия использования
+                <br>Конфиденциальность
+                <br>Правила и безопасность
+                <br>Новые функции.
+            </div>
+            <div class="copyright">
+                © 2020 Google LLC
+            </div>
+        </ul>
+        <div id="wrapper">
+            <div id="articles">
+            </div>
+        </div>
 
-    <script src="script/video.js"></script>
-    <script src="script/script.js"></script>
+
+
+        <div class="keyboard-box" id="kbd" tabindex="-1" width="100%">
+            <table cellpadding="0" cellspacing="0" class="t-keyboard">
+                <tbody style="user-select: none;">
+                    <tr style="user-select: none;">
+                        <td style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                            <div width="100%" dir="ltr" style="user-select: none;">
+                                <div class="key-head" style="text-align: left; user-select: none;">Русская клавиатура
+                                </div>
+                                <div class="key-head-closed vk-sf-cl"
+                                    style="right: 0px; padding-right: 14px; user-select: none;">
+                                    <div class="keyClosedBtn vk-t-btn vk-sf-cl">
+                                        <span class="closedLine"></span>
+                                        <span class="closedLine"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <table class="t-keyboard" cellpadding="0" cellspacing="0">
+                        <tbody style="user-select: none;">
+                            <tr style="user-select: none;">
+                                <td class="td-keyboard">
+                                    <table class="t-keyboard">
+                                        <tbody style="user-select: none;">
+                                            <tr style="user-select: none;">
+                                                <td class="td-keyboard">
+                                                    <button id="K192" type="button" class="key-btn  key-el-btn"><span
+                                                            class="vk-cap">ё</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K49" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">1</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K50" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">2</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K51" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">3</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K52" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">4</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K53" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">5</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K54" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">6</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K55" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">7</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K56" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">8</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K57" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">9</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K48" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">0</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K189" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">-</span></button></td>
+                                                <td class="td-keyboard">
+                                                    <button id="K187" type="button" class="key-btn key-el-btn"><span
+                                                            class="vk-cap">=</span></button></td>
+                                                <td class="td-keyboard">
+
+                                                    <button id="K8" type="button" class="k8-btn">
+                                                        <img src="img/backspace.svg" class="backspace"><span
+                                                            class="vk-cap vk-sf-b vk-sf-c8"></span></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="user-select: none;">
+                                <td style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                                        style="margin: 0px; padding: 0px; user-select: none;">
+                                        <tbody style="user-select: none;">
+                                            <tr style="user-select: none;">
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K9" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 45.5px; height: 29px; visibility: hidden; user-select: none;"></button>
+                                                </td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K81" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">й</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K87" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ц</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K69" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">у</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K82" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">к</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K84" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">е</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K89" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">н</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K85" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">г</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K73" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ш</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K79" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">щ</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K80" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">з</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K219" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">х</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K221" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ъ</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K220" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 45.5px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">\</span></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="user-select: none;">
+                                <td style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                                        style="margin: 0px; padding: 0px; user-select: none;">
+                                        <tbody style="user-select: none;">
+                                            <tr style="user-select: none;">
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K20" type="button" class="key-btn"
+                                                        style="cursor: default; visibility: hidden; ;background-color: #fff ;margin: 2px; width: 53.75px; height: 29px; user-select: none;">
+                                                        <span class="vk-cap vk-sf-b vk-sf-c20" ></span>
+                                                        </button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K65" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ф</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K83" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ы</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K68" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">в</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K70" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">а</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K71" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">п</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K72" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">р</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K74" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">о</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K75" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">л</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K76" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">д</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K186" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ж</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K222" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">э</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K13" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 70.25px; height: 29px; visibility: hidden; user-select: none;"></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="user-select: none;">
+                                <td style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                                        style="margin: 0px; padding: 0px; user-select: none;">
+                                        <tbody style="user-select: none;">
+                                            <tr style="user-select: none;">
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K16" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 70.25px; height: 29px; user-select: none;">
+                                                        <img src="img/shift.svg"  class="shift" alt="">
+                                                        <span
+                                                            class="vk-cap vk-sf-b vk-sf-c16"
+                                                            style="user-select: none;"></span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K90" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">я</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K88" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ч</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K67" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">с</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K86" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">м</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K66" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">и</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K78" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">т</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K77" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ь</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K188" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">б</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K190" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">ю</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K191" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 29px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap">.</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K16" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 86.75px; height: 29px; user-select: none;">
+                                                        <img src="img/shift.svg"  class="shift" alt="">
+                                                        <span
+                                                            class="vk-cap vk-sf-b vk-sf-c16"
+                                                            style="user-select: none;"></span></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="user-select: none;">
+                                <td style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+                                        style="margin: 0px; padding: 0px; user-select: none;">
+                                        <tbody style="user-select: none;">
+                                            <tr style="user-select: none;">
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K273" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 95px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap vk-sf-c273" style="user-select: none;">en</span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K32" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 293px; height: 29px; user-select: none;"><span
+                                                            style="visibility: hidden;"></span></button></td>
+                                                <td
+                                                    style="margin: 0px; padding: 0px; border: 0px none; user-select: none;">
+                                                    <button id="K273" type="button" class="key-btn"
+                                                        style="margin: 2px; width: 95px; height: 29px; user-select: none;"><span
+                                                            class="vk-cap vk-sf-c273" style="user-select: none;">en</span></button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        <script src="script/video.js"></script>
+        <script src="script/script.js"></script>
 
 </body>
+
 </html>

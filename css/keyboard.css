@@ -1,0 +1,120 @@
+.keyboard-box {
+    display: none;
+    background-color: #fff;
+    left: 680px;
+    top: 675px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0c, 0, 0.3);
+    z-index: 999;
+    font-family: arial, sans-serif;
+    position: fixed;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    outline: none;
+
+}
+
+.key-head {
+    height: 24px;
+    cursor: move;
+    padding: 0px 3px;
+
+}
+
+.key-head-closed {
+    padding: 13px 4px 8px 4px;
+    position: absolute;
+    top: 0px;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.keyClosedBtn {
+    width: 14px;
+    height: 14px;
+
+}
+
+.keyClosedBtn span:nth-child(1) {
+    transform: rotate(45deg) translate(-2px, 6px);
+}
+
+.keyClosedBtn span:nth-child(2) {
+    transform: rotate(-45deg) translate(-5px, -3px);
+}
+
+.closedLine {
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: black;
+}
+
+
+
+.t-keyboard {
+    width: 100%;
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    direction: ltr;
+    user-select: none;
+    display: block;
+}
+
+.td-keyboard {
+    margin: 2px;
+    padding: 0px;
+    border: 0px none;
+    user-select: none;
+}
+
+.key-btn {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    padding: 1px;
+    min-width: 0px;
+    max-width: 500px;
+    min-height: 0px;
+    max-height: 50px;
+    color: #444;
+    outline: none;
+    cursor: pointer;
+}
+
+.key-el-btn {
+    margin: 0;
+    width: 29px;
+    height: 29px;
+    user-select: none;
+}
+
+.shift {
+    width: 23px;
+    height: 16px;
+}
+
+.backspace {
+    margin-top: 3px;
+    width: 34px;
+    height: 16px;
+    opacity: .7;
+}
+
+.k8-btn {
+    margin: 2px;
+    width: 62px;
+    height: 29px;
+    user-select: none;
+}
+
+
+
+.k9-btn {
+    margin: 2px;
+    width: 45.5px;
+    height: 29px;
+    visibility: hidden;
+    user-select: none;
+}
